@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Form</title>
+</head>
+<body>
+    <h1>Travel Form</h1>
+    <form action="submit_travel_form.php" method="post">
+        <!-- Text input field for Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <p>Gender:</p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <br>
+
+        <label for="country">Country of Residence:</label>
+        <select id="country" name="country" required>
+            <option value="">Please select</option>
+            <option value="India">India</option>
+            <option value="Uk">Uk</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br>
+
+        <p>Travel Preferences:</p>
+        <label for="adventure">Adventure</label>
+        <input type="checkbox" id="adventure" name="preferences" value="adventure">
+        <label for="beach">Beach</label>
+        <input type="checkbox" id="beach" name="preferences" value="beach">
+        <label for="culture">Culture</label>
+        <input type="checkbox" id="culture" name="preferences" value="culture">
+        <br>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
